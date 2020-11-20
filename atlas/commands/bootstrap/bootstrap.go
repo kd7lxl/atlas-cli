@@ -71,7 +71,7 @@ func (b Bootstrap) Run() error {
 	root, err := utill.ProjectRoot(build.Default.GOPATH, wd)
 	if err != nil {
 		fmt.Println("GOPATH:", build.Default.GOPATH, "wd:", wd)
-		return initializationError{err: err}
+		fmt.Println(err)
 	}
 
 	app := application.Application{

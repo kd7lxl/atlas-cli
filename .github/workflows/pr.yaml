@@ -5,16 +5,11 @@ jobs:
     name: Test with integration
     runs-on: ubuntu-latest
     timeout-minutes: 20
-    defaults:
-      run:
-        working-directory: ${{ env.HOME }}/go/src/github.com/${{ github.repository }}
     env:
       HELM_VERSION: v2.14.3
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
-          path: ${{ env.HOME }}/go/src/github.com/${{ github.repository }}
       - uses: azure/setup-helm@v1
         with:
           version: ${{ env.HELM_VERSION }}
