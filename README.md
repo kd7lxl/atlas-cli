@@ -66,6 +66,7 @@ Here's the full set of flags for the `init-app` command.
 | `db`          | Bootstrap the application with PostgreSQL database integration      | No            | `false`       |
 | `expand`      | Initialize the application with additional services based on a file | No            | `""`          |
 | `gateway`     | Initialize the application with a gRPC gateway                      | No            | `false`       |
+| `github`      | Generate project with Github-specific configs in /.github           | No            | `true`        |
 | `health`      | Initialize the application with internal health checks              | No            | `false`       |
 | `helm`        | Initialize the application with helm charts                         | No            | `false`       |
 | `metrics`     | Initialize the application with gRPC Prometheus metrics             | No            | `true`        |
